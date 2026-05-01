@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UX/UI Designer Portfolio by Patipan Phosung">
+  <title>Project Details - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+function openModal(src) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="logo">
+        <h1>Portfolio</h1>
+        <p>UX/UI Designer</p>
+      </div>
+      
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#work" class="nav-link active">Work</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&to=i.again306@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Project Hero -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+      <div class="container">
+        <div class="project-hero-content">
+          <h1>Clero</h1>
+          <p>Accounting Software</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-main">
+            <h2>Project Overview</h2>
+            <p>
+              Clero Accounting Platform is a modern, end-to-end financial management application
+              designed to simplify expense tracking, procurement workflows,
+              and payment operations for small to medium-sized businesses.
+              <br>
+              <br> The platform streamlines the entire purchasing lifecycle—from purchase orders
+              and deposits to goods receipt, invoicing, and payment—while also supporting flexible expense management
+              for day-to-day business operations. With a focus on clarity, automation, and usability,
+              Clero helps teams maintain financial accuracy, improve approval workflows,
+              and gain better control over cash flow.
+            </p>
+
+            <h3>Problem</h3>
+            <p>
+              Small business owners often struggle with complex accounting tools
+              and lack visibility into their financial data.
+            </p>
+
+            <h3>Solution</h3>
+            <p>
+              Clero simplifies financial workflows with an intuitive interface and real-time insights,
+              making accounting accessible to non-experts.
+            </p>
+
+            <h3>Impact</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Reduced time spent on manual accounting tasks</span>
+              <span class="tech-badge">Improved financial visibility</span>
+              <span class="tech-badge">Increased efficiency in managing business operations</span>
+            </div>
+
+            <h3>Key Features</h3>
+            <ul class="features-list">
+              <li>Invoice & Billing</li>
+              <li>Financial Dashboard</li>
+              <li>Expense Management</li>
+              <li>Tax & VAT Support</li>
+              <li>Reports & Analytics</li>
+              <li>User & Access Control</li>
+            </ul>
+
+            <h3>Project Gallery</h3>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="images/Clero/Dashboard.png" onclick="openModal(this.src)" alt="Project 1">
+              </div>
+
+               <div class="gallery-item">
+                <img src="images/Clero/ใบเสนอราคา.png" onclick="openModal(this.src)" alt="Project 2">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/Clero/สร้างใบเสนอราคา.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/Clero/ใบรับเงินมัดจำ.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/Clero/สร้างผู้ติดต่อ.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/Clero/บริการ.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+            </div>
+          </div>
+          
+          <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImg">
+          </div>
+
+          <aside class="project-sidebar">
+            <div class="project-info">
+              <h3>Project Info</h3>
+              
+              <div class="info-item">
+                <label>Year</label>
+                <p>2026</p>
+              </div>
+
+              <div class="info-item">
+                <label>Category</label>
+                <p>UI/UX Design</p>
+              </div>
+
+              <div class="info-item">
+                <label>Client</label>
+                <p>Clero Co., Ltd.</p>
+              </div>
+
+              <div class="info-item">
+                <label>Duration</label>
+                <p>Ongoing</p>
+              </div>
+
+              <div class="info-item">
+                <label>Role</label>
+                <p>Product Designer (UX/UI)</p>
+              </div>
+
+              <div class="project-links">
+                <a href="index.html" class="secondary-button">Back to Portfolio</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+      <div class="container">
+        <h2>Related Projects</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Vonder-Game/Cover.png" alt="Vonder Game Project">
+              <div class="work-overlay">
+                <a href="Vonder.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Vonder Game</h3>
+              <p>Card Game</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/NorthSpaceNFT/Cover.png" alt="North Space NFT Project">
+              <div class="work-overlay">
+                <a href="NorthSpaceNFT.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>North Space NFT</h3>
+              <p>Mobile App</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/SoClinic/LINE_NOTE_251011_18.jpg" alt="SoClinic Project">
+              <div class="work-overlay">
+                <a href="SoClinic.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>SoClinic</h3>
+              <p>Social Media Management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

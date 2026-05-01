@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UX/UI Designer Portfolio by Patipan Phosung">
+  <title>Project Details - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+function openModal(src) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="logo">
+        <h1>Portfolio</h1>
+        <p>UX/UI Designer</p>
+      </div>
+      
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#work" class="nav-link active">Work</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&to=i.again306@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+        <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Project Hero -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+      <div class="container">
+        <div class="project-hero-content">
+          <h1>So Clinic</h1>
+          <p>Social Media Management</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-main">
+            <h2>Project Overview</h2>
+            <p>
+              Managed and developed social media content for a beauty clinic, focusing on brand communication,
+              audience engagement, and consistent visual identity across platforms.
+            </p>
+
+            <h3>Problem</h3>
+            <p>
+              The clinic lacked consistent branding and engaging content,
+              resulting in low audience interaction and unclear communication of services.
+            </p>
+
+            <h3>Solution</h3>
+            <p>
+              Created a structured content strategy including graphic design,
+              content planning, and scheduled posting to improve brand consistency and audience engagement.
+            </p>
+
+            <h3>Impact</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Increased engagement rate</span>
+              <span class="tech-badge">Improved brand consistency</span>
+              <span class="tech-badge">More effective communication of services</span>
+            </div>
+
+            <h3>Key Features</h3>
+            <ul class="features-list">
+              <li>Content Planning & Strategy</li>
+              <li>Social Media Scheduling</li>
+              <li>Graphic Design for Posts</li>
+              <li>Copywriting & Caption Writing</li>
+              <li>Brand Visual Direction</li>
+            </ul>
+
+            <h3>Project Gallery</h3>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_18.jpg" onclick="openModal(this.src)" alt="Project 1">
+              </div>
+
+               <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_17.jpg" onclick="openModal(this.src)" alt="Project 2">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_12.jpg" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_10.jpg" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_5.jpg" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/SoClinic/LINE_NOTE_251011_1.jpg" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+            </div>
+          </div>
+          
+          <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImg">
+          </div>
+
+          <aside class="project-sidebar">
+            <div class="project-info">
+              <h3>Project Info</h3>
+              
+              <div class="info-item">
+                <label>Year</label>
+                <p>2025</p>
+              </div>
+
+              <div class="info-item">
+                <label>Category</label>
+                <p>Social Media Management / Content Design</p>
+              </div>
+
+              <div class="info-item">
+                <label>Client</label>
+                <p>SO Clinic</p>
+              </div>
+
+              <div class="info-item">
+                <label>Duration</label>
+                <p>6 months</p>
+              </div>
+
+              <div class="info-item">
+                <label>Role</label>
+                <p>Social Media Manager & Content Designer</p>
+              </div>
+
+              <div class="project-links">
+                <a href="index.html" class="secondary-button">Back to Portfolio</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+      <div class="container">
+        <h2>Related Projects</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Clero/Cover.png" alt="Clero Project">
+              <div class="work-overlay">
+                <a href="Clero.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Clero</h3>
+              <p>Accounting Software</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Vonder-Game/Cover.png" alt="Vonder Game Project">
+              <div class="work-overlay">
+                <a href="Vonder.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Vonder</h3>
+              <p>Card Game</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/NorthSpaceNFT/Cover.png" alt="North Space NFT Project">
+              <div class="work-overlay">
+                <a href="NorthSpaceNFT.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>North Space NFT</h3>
+              <p>Mobile App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

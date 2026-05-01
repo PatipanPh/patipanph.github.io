@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UX/UI Designer Portfolio by Patipan Phosung">
+  <title>Project Details - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+function openModal(src) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="logo">
+        <h1>Portfolio</h1>
+        <p>UX/UI Designer</p>
+      </div>
+      
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#work" class="nav-link active">Work</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&to=i.again306@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Project Hero -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+      <div class="container">
+        <div class="project-hero-content">
+          <h1>North Space NFT</h1>
+          <p>Mobile App</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-main">
+            <h2>Project Overview</h2>
+            <p>
+              A Web3 lifestyle platform that combines NFT collectibles,
+              reward systems, and real-world privileges into one seamless mobile experience.
+              <br>
+              <br>
+              Web3 Lifestyle Platform / Gamified Loyalty System / NFT Collectibles / Real-World Utility
+            </p>
+
+            <h3>Problem</h3>
+            <p>
+              Existing loyalty and NFT platforms fail to connect digital assets with real-world utility
+              and meaningful user engagement.
+            </p>
+
+            <h3>Solution</h3>
+            <p>
+              A gamified ecosystem where users earn points through activity, collect NFTs,
+              and redeem real-world privileges via vouchers and partner services.
+            </p>
+
+            <h3>Impact</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Increased user engagement</span>
+              <span class="tech-badge">Connected digital assets to real-world value</span>
+              <span class="tech-badge">Encouraged repeat usage through gamification</span>
+            </div>
+
+            <h3>Key Features</h3>
+            <ul class="features-list">
+              <li>NFT Buddy Collection</li>
+              <li>Earn Points from Activity (NP / Step)</li>
+              <li>Voucher & Privilege Marketplace</li>
+              <li>QR Code Redemption System</li>
+              <li>Wallet Integration (Web3)</li>
+            </ul>
+
+            <h3>Project Gallery</h3>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/login.png" onclick="openModal(this.src)" alt="Project 1">
+              </div>
+
+               <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/Profile-Received-Wallet-not-Connected.png" onclick="openModal(this.src)" alt="Project 2">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/Previlege-1.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/QR-Use-Voucher.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/Admin-Publish.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/NorthSpaceNFT/Total-Point-Card.png" onclick="openModal(this.src)" alt="Project 3">
+              </div>
+            </div>
+          </div>
+          
+          <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImg">
+          </div>
+
+          <aside class="project-sidebar">
+            <div class="project-info">
+              <h3>Project Info</h3>
+              
+              <div class="info-item">
+                <label>Year</label>
+                <p>2023</p>
+              </div>
+
+              <div class="info-item">
+                <label>Category</label>
+                <p>Web3 Lifestyle Platform / Gamified Loyalty System</p>
+              </div>
+
+              <div class="info-item">
+                <label>Client</label>
+                <p>North Space</p>
+              </div>
+
+              <div class="info-item">
+                <label>Duration</label>
+                <p>Concept / Prototype Stage</p>
+              </div>
+
+              <div class="info-item">
+                <label>Role</label>
+                <p>Product Designer (UX/UI)</p>
+              </div>
+
+              <div class="project-links">
+                <a href="index.html" class="secondary-button">Back to Portfolio</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+      <div class="container">
+        <h2>Related Projects</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Vonder-Game/Cover.png" alt="Vonder Game Project">
+              <div class="work-overlay">
+                <a href="Vonder.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Vonder Game</h3>
+              <p>Card Game</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Clero/Cover.png" alt="Clero Project">
+              <div class="work-overlay">
+                <a href="Clero.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>Clero</h3>
+              <p>Accounting Software</p>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/SoClinic/LINE_NOTE_251011_18.jpg" alt="SoClinic Project">
+              <div class="work-overlay">
+                <a href="SoClinic.html" class="view-link">View Project</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3>SoClinic</h3>
+              <p>Social Media Management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
